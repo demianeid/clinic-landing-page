@@ -39,15 +39,15 @@
 <body class="bg-gray-50 text-medicalDark font-sans antialiased overflow-x-hidden">
 
     <!-- شريط التنقل (Navbar) -->
-    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-extrabold text-medicalBlue flex items-center gap-2.5 group">
-                <div class="w-10 h-10 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-mint shadow-sm group-hover:bg-medicalBlue group-hover:text-white transition-all duration-300">
-                    <svg class="w-6 h-6 fill-current" viewBox="0 0 384 512">
+    <header class="bg-white/95 backdrop-blur-md shadow-sm fixed w-full top-0 z-50 transition-all">
+        <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center gap-2">
+            <a href="#" class="text-xl sm:text-2xl font-extrabold text-medicalBlue flex items-center gap-2 sm:gap-2.5 group shrink-0">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-mint shadow-sm group-hover:bg-medicalBlue group-hover:text-white transition-all duration-300 shrink-0">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6 fill-current" viewBox="0 0 384 512">
                         <path d="M154.1 52.1C137.3 39.1 116.7 32 95.5 32C42.7 32 0 74.7 0 127.5c0 44.9 31.3 82.6 73.6 91.8c2.8 .6 5.5 1.7 7.7 3.4l34.4 25.8c7.4 5.5 12.3 13.9 13.6 23.2l18.4 128.6c3.2 22.4 22.4 39 45 39c23.2 0 42.6-17.5 45.4-40.6l12.7-101.4c1.3-10.5 9.4-18.9 19.9-20.4l8.3-1.2c10.5-1.5 18.6-9.9 19.9-20.4l12.7 101.4c2.8 23.1 22.2 40.6 45.4 40.6c22.6 0 41.8-16.6 45-39l18.4-128.6c1.3-9.3 6.2-17.7 13.6-23.2l34.4-25.8c2.2-1.7 4.9-2.8 7.7-3.4C352.7 210.1 384 172.4 384 127.5C384 74.7 341.3 32 288.5 32c-21.2 0-41.8 7.1-58.6 20.1L200.2 75.1c-4.9 3.8-11.5 3.8-16.4 0L154.1 52.1z"/>
                     </svg>
                 </div>
-                <span>مركز الابتسامة</span>
+                <span class="whitespace-nowrap">مركز الابتسامة</span>
             </a>
             
             <nav class="hidden md:flex space-x-8 space-x-reverse font-medium text-gray-600">
@@ -57,32 +57,33 @@
                 <a href="#booking" class="hover:text-medicalBlue transition">احجز موعد</a>
             </nav>
 
-            <div>
-                <a href="#booking" class="bg-medicalBlue hover:bg-sky-700 text-white px-6 py-2.5 rounded-full font-bold transition shadow-md shadow-sky-100">
-                    حجز موعد فوري
+            <div class="shrink-0">
+                <a href="#booking" class="bg-medicalBlue hover:bg-sky-700 text-white px-3.5 sm:px-6 py-2 sm:py-2.5 rounded-full font-bold transition shadow-md shadow-sky-100 text-xs sm:text-base whitespace-nowrap inline-flex items-center gap-1">
+                    <span>احجز الآن</span>
+                    <span class="hidden sm:inline">مجاناً</span>
                 </a>
             </div>
         </div>
     </header>
 
     <!-- القسم الرئيسي (Hero Section) -->
-    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-medicalLight to-white">
-        <div class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12">
+    <section id="home" class="pt-24 pb-16 md:pt-36 md:pb-28 bg-gradient-to-b from-medicalLight to-white overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <!-- النص -->
-            <div class="flex-1 text-center md:text-right">
-                <span class="bg-sky-100 text-medicalBlue font-bold px-4 py-1.5 rounded-full text-sm mb-4 inline-block">رعاية متكاملة لصحة أسنانك</span>
-                <h1 class="text-4xl md:text-6xl font-extrabold text-medicalDark leading-tight mb-6">
+            <div class="flex-1 text-center md:text-right w-full">
+                <span class="bg-sky-100 text-medicalBlue font-bold px-3.5 py-1.5 rounded-full text-xs sm:text-sm mb-3 sm:mb-4 inline-block">رعاية متكاملة لصحة أسنانك</span>
+                <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-medicalDark leading-tight mb-4 md:mb-6">
                     ابتسامة أحلامك <br>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-medicalBlue to-mint">تبدأ من هنا</span>
                 </h1>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto md:mx-0">
+                <p class="text-base sm:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed max-w-2xl mx-auto md:mx-0">
                     نستخدم أحدث التقنيات الطبية وبدون ألم لضمان حصولك على ابتسامة مشرقة وثقة تامة. فريق طبي متخصص في خدمتك على مدار الساعة.
                 </p>
-                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-                    <a href="#booking" class="bg-medicalBlue hover:bg-sky-700 text-white px-8 py-3.5 rounded-full font-bold transition shadow-lg text-lg text-center">
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-3 sm:gap-4 max-w-md mx-auto md:mx-0">
+                    <a href="#booking" class="bg-medicalBlue hover:bg-sky-700 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-bold transition shadow-lg text-base sm:text-lg text-center">
                         احجز موعدك الآن
                     </a>
-                    <a href="tel:+201234567890" class="bg-white border-2 border-gray-200 hover:border-medicalBlue text-gray-700 px-8 py-3.5 rounded-full font-bold transition text-lg flex justify-center items-center gap-2">
+                    <a href="tel:+201234567890" class="bg-white border-2 border-gray-200 hover:border-medicalBlue text-gray-700 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-bold transition text-base sm:text-lg flex justify-center items-center gap-2">
                         <svg class="w-5 h-5 text-medicalBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                         <span>اتصل بنا مباشرة</span>
                     </a>
@@ -90,19 +91,19 @@
             </div>
             
             <!-- الصورة التوضيحية -->
-            <div class="flex-1 relative">
-                <div class="absolute -inset-4 bg-gradient-to-tr from-sky-200 to-mint/20 rounded-3xl blur-2xl opacity-50 -z-10"></div>
+            <div class="flex-1 w-full relative max-w-lg md:max-w-none mx-auto">
+                <div class="absolute -inset-2 sm:-inset-4 bg-gradient-to-tr from-sky-200 to-mint/20 rounded-3xl blur-xl sm:blur-2xl opacity-50 -z-10"></div>
                 <div class="relative">
-                    <img src="35538-ابتسامة-مفتوحة-الفم.webp" alt="ابتسامة ناصعة وأسنان صحية ونقية" class="rounded-3xl shadow-2xl border-4 border-white object-cover object-center h-[420px] w-full">
+                    <img src="35538-ابتسامة-مفتوحة-الفم.webp" alt="ابتسامة ناصعة وأسنان صحية ونقية" class="rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl border-2 sm:border-4 border-white object-cover object-center w-full h-56 sm:h-72 md:h-[400px] lg:h-[430px]">
                     
                     <!-- بطاقة إحصائية تزيد من جاذبية الهيرو ومصداقيته -->
-                    <div class="absolute -bottom-5 -right-5 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-sky-100 flex items-center gap-3 hidden sm:flex">
-                        <div class="w-12 h-12 bg-mint/10 text-mint rounded-xl flex items-center justify-center font-bold text-xl">
+                    <div class="absolute -bottom-3 -right-2 sm:-bottom-5 sm:-right-5 bg-white/95 backdrop-blur-md p-2.5 sm:p-4 rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl border border-sky-100 flex items-center gap-2 sm:gap-3">
+                        <div class="w-8 h-8 sm:w-12 sm:h-12 bg-mint/10 text-mint rounded-lg sm:rounded-xl flex items-center justify-center font-bold text-sm sm:text-xl">
                             <i class="fa-solid fa-tooth"></i>
                         </div>
                         <div>
-                            <div class="text-xs text-gray-500 font-medium">رعاية متخصصة</div>
-                            <div class="text-base font-extrabold text-medicalDark">+15,000 ابتسامة سعيدة</div>
+                            <div class="text-[10px] sm:text-xs text-gray-500 font-medium">رعاية متخصصة</div>
+                            <div class="text-xs sm:text-base font-extrabold text-medicalDark">+15,000 ابتسامة سعيدة</div>
                         </div>
                     </div>
                 </div>
